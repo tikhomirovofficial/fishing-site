@@ -7,12 +7,16 @@
     color: #1b1b1c;
     --btnColor: #27C34B;
     --btnColorHover: #4cc167;
+    --bgWhiteDark: #f3f3f3
 }
 
 header {
     padding: 1.7rem 0
 }
-
+section:not(.main__section) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
 .wrapper {
     max-width: 117rem;
     margin: 0 auto;
@@ -54,7 +58,6 @@ header {
 }
 
 .main__section {
-
     background-size: cover;
     height: 96vh;
 }
@@ -87,7 +90,6 @@ header {
 
 .section__title {
     font-size: 40px;
-    margin-top: 80px;
     margin-bottom: 50px;
 }
 .about__content {
@@ -101,4 +103,102 @@ header {
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: justify;
+}
+.prices {
+    background: var(--bgWhiteDark);
+    padding-bottom: 70px !important;
+}
+.prices__tabs-item {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #48b264;
+    border: 3px solid #61c077;
+    border-radius: 50px;
+    transition: 0.3s;
+    padding: 10px 22px;
+    cursor: pointer;
+}
+.prices__tabs-list {
+    margin-bottom: 60px;
+}
+.prices__tabs-item:not(.prices__tab-active):hover {
+    color: #26a242;
+
+    border: 3px solid #26a242;
+}
+.prices__tab-active {
+    background: #27C34B;
+    border: 3px solid #27C34B;
+    color: white;
+}
+.prices__tabs-content-showed {
+    display: block !important;
+}
+.price__tab-content {
+    display: none;
+}
+.price__fishing-item h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+.prices__tabs ul, .prices__tabs ol {
+    padding-left: 30px;
+    display: flex;
+    max-width: 750px;
+    flex-direction: column;
+    gap: 8px;
+}
+.prices__tabs ul li {
+    list-style: disc;
+    font-size: 1.6rem;
+}
+.prices__tabs ol li {
+    font-size: 1.6rem;
+    list-style-type: decimal;
+}
+
+.prices__fish-item {
+    max-width: 550px;
+    font-size: 1.6rem;
+}
+.prices__fish {
+    max-height: 170px;
+}
+.prices__gazebos-item {
+    max-width: 562px;
+}
+.prices__gazebos-item img {
+    width: 562px;
+    height: 338px;
+}
+.prices__gazebos-item h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #1b1b1c
+}
+.prices__gazebos-item b {
+    font-size: 1.6rem;
+    display: block;
+    margin: 5px 0;
+}
+.prices__gazebos-item p, .hotel__description {
+    font-size: 1.6rem;
+}
+.hotel__price {
+    font-size: 2.2rem;
+}
+.hotel__worktime {
+    max-width: 320px;
+    line-height: 1.5;
+}
+.hotel__photos {
+    gap: 24px;
+    margin: 50px 0;
+}
+.hotel__img {
+    width: 366px;
+    height: 230px;
+    background: blue;
 }
