@@ -3,7 +3,6 @@
 :root {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 100px;
     color: #1b1b1c;
     --btnColor: #27C34B;
     --btnColorHover: #4cc167;
@@ -163,6 +162,10 @@ section:not(.main__section) {
 }
 .prices__fish {
     max-height: 170px;
+    margin-bottom: 20px;
+}
+.prices__gazebos {
+    row-gap: 30px;
 }
 .prices__gazebos-item {
     max-width: 562px;
@@ -200,5 +203,58 @@ section:not(.main__section) {
 .hotel__img {
     width: 366px;
     height: 230px;
-    background: blue;
+    background-size: cover;
+}
+
+.contacts {
+    background: var(--bgWhiteDark);
+}
+.contacts__title {
+    margin-bottom: unset;
+}
+.contacts__description {
+    font-size: 2.2rem;
+}
+.contacts__titles {
+    margin-bottom: 60px;
+}
+.contacts__list-item h3, .contacts__list-item p, .contacts__link, .contacts__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.contacts__info {
+    width: 550px;
+}
+.contacts__list-item {
+    padding-bottom: 18px;
+    width: 100%;
+    border-bottom: #d0d0d0 solid 1px;
+}
+.contacts__list-item p {
+    max-width: 100%;
+}
+.contacts__link {
+    text-decoration: underline;
+    transition: 0.3s color;
+}
+.contacts__link:hover {
+    color: gray;
+    text-decoration: unset;
+}
+.contacts__social {
+    padding: 30px 0;
+}
+
+.contacts__social-item {
+    transition: 0.3s;
+    gap: 7px;
+    font-size: 1.4rem;
+}
+.contacts__social-item:hover {
+    opacity: 0.7;
+}
+.social__icon {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
 }
