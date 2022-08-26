@@ -17,9 +17,9 @@ section:not(.main__section) {
     padding-bottom: 30px;
 }
 .wrapper {
-    max-width: 117rem;
+    max-width: 119rem;
     margin: 0 auto;
-    padding: 0 1.2rem;
+    padding: 0 1.5rem;
 }
 
 .header__logo {
@@ -196,11 +196,11 @@ section:not(.main__section) {
     max-width: 320px;
     line-height: 1.5;
 }
-.hotel__photos {
+.hotel__photos, .gallery__items {
     gap: 24px;
     margin: 50px 0;
 }
-.hotel__img {
+.hotel__img, .gallery__img {
     width: 366px;
     height: 230px;
     background-size: cover;
@@ -257,4 +257,155 @@ section:not(.main__section) {
     border-radius: 50%;
     height: 40px;
     width: 40px;
+}
+.gallery-item {
+    overflow: hidden;
+}
+.gallery__img {
+    transition: 1s transform;
+}
+.gallery__img:hover {
+    transform: scale(1.05);
+}
+.gallery-carousel {
+    background: black;
+    visibility: hidden;
+    z-index: 2;
+}
+.gallery-opened {
+    visibility: visible;
+}
+.gallery-carousel__header {
+    width: 100%;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.6rem;
+    background: black;
+}
+.gallery__slider-item {
+    width: 100vw !important;
+    display: flex;
+    justify-content: center;
+}
+.gallery__slider-prev {
+    left: 0;
+}
+.gallery-carousel__header {
+    z-index: 6;
+}
+.gallery__slider_btn {
+    top: 0;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    background: black;
+}
+.gallery__slider_btn img {
+    width: 80px;
+    cursor: pointer;
+}
+.gallery__slider-next {
+    right: 0;
+}
+.body__gallery {
+    overflow: hidden;
+}
+.gallery__slider-item img {
+    max-width: 1000px;
+    width: 70%;
+}
+@media (max-width: 1170px) {
+    .header__link {
+        font-size: 1.4rem;
+    }
+    .wrapper {
+        max-width: 1050px;
+    }
+    .header__present {
+        gap: 20px;
+    }
+    .header__logo {
+        width: 60px;
+        height: 60px;
+    }
+    .header__phone {
+        font-size: 1.9rem;
+    }
+    .contacts__geo iframe {
+        height: 450px;
+        width: 450px;
+    }
+    .contacts__info {
+        max-width: 450px;
+    }
+    .header__callback p {
+        font-size: 1.35rem;
+    }
+    .section__title {
+        font-size: 3.5rem;
+    }
+    .prices__gazebos-item img {
+        width: 450px;
+        height: 291px;
+    }
+    .prices__gazebos-item {
+        max-width: 490px;
+    }
+
+    .hotel__img, .gallery__img {
+        width: 310px;
+        height: 200px;
+    }
+}
+@media (max-width: 1008px) {
+    .hotel__photos {
+        justify-content: center;
+    }
+    .hotel__price, .hotel__worktime {
+        text-align: center;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+@media (max-width: 940px) {
+    .prices__gazebos-item img {
+        width: 400px;
+        height: 261px;
+    }
+    .prices__gazebos-item {
+        max-width: 440px;
+    }
+    .contacts__geo iframe {
+        height: 350px;
+        width: 350px;
+    }
+    .about__text-item {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+    .about__content {
+        gap: 25px;
+    }
+
+}
+@media (max-width: 870px) {
+    .contacts__content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .contacts__info {
+        width: 90%;
+        max-width: 100%;
+    }
+    .contacts__geo iframe {
+        width: 100%;
+    }
+    .prices__gazebos {
+        justify-content: center;
+    }
+
 }
