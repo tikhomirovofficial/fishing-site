@@ -15,25 +15,54 @@
         <div class="wrapper">
             <div class="header__block flex-row-betw al-center">
                 <div class="header__present d-f al-center">
-                    <img class="header__logo" src="assets/img/logo.png" alt="">
-                    <p>Платная рыбалка в Подмосковье</p>
+                    <img class="header__logo" src="http://fishing-site/wp-content/uploads/2022/08/logo.png" alt="">
+                    <p class="header__text">Платная рыбалка в Подмосковье</p>
                 </div>
                 <nav>
                     <ul class="header__nav d-f">
                         <li><a class="fade-scroll header__link" href="#prices">Цены</a></li>
-                        <li><a class="fade-scroll header__link" href="#hotel">Гостиницы</a></li>
-                        <li><a class="header__link" href="gallery.html">Галерея</a></li>
+                        <li><a class="fade-scroll header__link" href="#hotel">Гостиница</a></li>
+                        <li><a class="fade-scroll header__link" href="/gallery">Галерея</a></li>
                         <li><a class="fade-scroll header__link" href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__callback">
-                    <a class="header__phone" href="tel:79269119407">+7 (926) 911-94-07</a>
-                    <p>ежедневно с 7:00 до 20:00</p>
+                    <a class="header__phone" href="tel:79269119403">+7 (926) 911-94-03</a>
+                    <p>ежедневно с 7:00 до 21:00</p>
 
+                </div>
+                <div class="header__burger p-rel">
+                    <div id="burger" class="header__burger-block flex-column">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <div id="burger__menu" class="burger__menu bg-white h-100p w-100p p-fix">
+        <div class="wrapper burger_wrapper">
+            <div class="burger__menu-block flex-column js-between h-100p">
+                <div class="burger__nav flex-column gap-30">
+                    <a class="fade-scroll burger__nav-link" href="#prices">Цены</a>
+                    <a class="fade-scroll burger__nav-link" href="#hotel">Гостиница</a>
+                    <a class="fade-scroll burger__nav-link" href="gallery.html">Галерея</a>
+                    <a class="fade-scroll burger__nav-link" href="#contacts">Контакты</a>
+                </div>
+                <div class="flex-column gap-20">
+                    <p class="burger__text">Платная рыбалка в Подмосковье</p>
+                    <div class="burger__callback">
+                        <a class="burger__phone fw-7" href="tel:79269119403">+7 (926) 911-94-03</a>
+                        <p>ежедневно с 7:00 до 21:00</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
     <section style="background-image: url('./assets/img/main_bg.jpg');" class="main__section">
         <div class="main__back_shadow w-100p h-100p">
             <div class="wrapper h-100p">
@@ -41,7 +70,12 @@
                     <h1 class="main__title c-white">
                         Рыбалка с комфортом без нормы вылова в 15 км от Москвы
                     </h1>
-                    <a class="main__link c-white" href="https://wa.clck.bar/79269119407">Написать в Whatsapp</a>
+                    <div class="main__links flex-column gap-20">
+                        <a class="main__link c-white" href="https://wa.clck.bar/79269119407">Написать в Whatsapp</a>
+                        <a href="tel:79269119403" class="main__link main__link-call">
+                            Позвонить
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -261,6 +295,7 @@
         </div>
     </section>
     <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/fadeScroll.js"></script>
 </body>
 </html>
